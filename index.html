@@ -1,101 +1,46 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ABINAYA P - Portfolio</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
+<html>
 <body>
-    <header>
-        <nav>
-            <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#resume">Resume</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
-        <div class="hero">
-            <h1>ABINAYA</h1>
-            <p>Welcome to my portfolio. I’m a web developer passionate about creating beautiful and functional websites.</p>
-            <a href="#contact" class="cta">Explore me</a>
-        </div>
-    </header>
+<h1>Calculator</h1>
+<form name="calc">
+    <table>
+        <tr>
+            <td>
+                <input type="text" name="input" size="16" id="answer">
 
-    <section id="about">
-        <div class="profile-container">
-            <img src="https://img.freepik.com/premium-vector/hand-drawing-cartoon-girl-cute-girl-drawing-profile-picture_488586-690.jpg" alt="Profile Picture" class="profile-img">
-        </div>
-        <h2>About Me</h2>
-        <p>Hello! I’m Abinaya, a passionate and motivated web developer who has recently embarked on an exciting journey into the world of web development. With a strong foundation in HTML, CSS, and JavaScript, I’m eager to apply my skills to create dynamic and user-friendly websites and applications.With a keen eye for design and a deep understanding of coding, I specialize in creating visually appealing and highly functional websites. I’m driven by the desire to bring ideas to life through clean, efficient code and innovative solutions.</p>
-    </section>
-
-    <section id="skills">
-        <h2>Skills</h2>
-        <div class="skills-container">
-            <div class="skill">
-                <img src="https://cdn.pixabay.com/photo/2017/08/05/11/16/logo-2582748_1280.png" alt="HTML" class="skill-img">
-                <h3>HTML</h3>
-                <p>My proficiency in HTML allows me to lay the groundwork for engaging, functional, and visually appealing web experiences.</p>
-            </div>
-            <div class="skill">
-                <img src="https://cdn.pixabay.com/photo/2017/08/05/11/16/logo-2582747_1280.png" alt="CSS" class="skill-img">
-                <h3>CSS</h3>
-                <p>With a strong grasp of CSS, I can transform static HTML structures into beautifully designed, interactive, and user-friendly web experiences.</p>
-            </div>
-            <div class="skill">
-                <img src="https://www.pngitem.com/pimgs/m/681-6810582_javascript-logo-svg-hd-png-download.png" alt="JavaScript" class="skill-img">
-                <h3>JavaScript</h3>
-                <p>Experience with JavaScript for dynamic web functionalities.</p>
-            </div>
-            <!-- Add more skills with images as needed -->
-        </div>
-    </section>
-
-    <section id="projects">
-        <h2>Projects</h2>
-        <div class="projects-container">
-            <div class="project">
-                <img src=" https://a.storyblok.com/f/177206/493x300/e1bd2af332/virtual-reality-vr.PNG/m/" alt="Virtual Reality Experience" class="project-img">
-                <div class="project-info">
-                    <h3>Virtual Reality Experience</h3>
-                    <p>A virtual reality (VR) experience is a computer-generated environment that users can immerse themselves in by wearing a virtual reality headset. </p>
-                </div>
-            </div>
-            <div class="project">
-                <img src="https://i0.wp.com/modernretail.co.uk/wp-content/uploads/2018/09/shutterstock_1067702951.png?fit=740%2C545&ssl=1" alt="AI-Powered Chatbot" class="project-img">
-                <div class="project-info">
-                    <h3>AI-Powered Chatbot</h3>
-                    <p>This project will deepen your understanding of AI-powered conversational interfaces and their real-world applications.</p>
-                </div>
-            </div>
-            <!-- Add more projects as needed -->
-        </div>
-    </section>
-
-    <section id="resume">
-        <h2>Resume</h2>
-        <p>You can view my resume</p>
-        <p><a href="resume.pdf" target="_blank">My Resume</a>.</p>
-    </section>
-
-    <section id="contact">
-        <h2>Contact</h2>
-        <p>Feel free to reach out to me via the following methods:</p>
-        <ul class="contact-list">
-            <li>Email: <a href="mailto:abinayasameena@gmail.com">abinayasameena@gmail.com</a></li>
-            <li>Phone: <a href=" ">9363253040</a></li>
-            <li>LinkedIn: <a href="https://www.linkedin.com/in/abinaya-p-5b845b302" target="_blank">Abinaya P</a></li>
-            <li>GitHub: <a href="https://github.com/AbinayaP10" target="_blank">AbinayaP10</a></li>
-            <!-- Add more contact details or social profiles as needed -->
-        </ul>
-    </section>
-
-    <footer>
-        <p>&copy; 2024 Abinaya. All rights reserved.</p>
-    </footer>
+                <br>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                
+                <input type="button" name="one" value="  7 " onclick="calc.input.value += '7'">
+                <input type="button" name="two" value="  8  " onclick="calc.input.value += '8'">
+                <input type="button" name="three" value="  9  " onclick="calc.input.value += '9'">
+                <input type="button" class="operator" name="times" value="  x  " onclick="calc.input.value += ' * '">
+                <br>
+                <input type="button" name="four" value="  4  " onclick="calc.input.value += '4'">
+                <input type="button" name="five" value="  5  " onclick="calc.input.value += '5'">
+                <input type="button" name="six" value="  6  " onclick="calc.input.value += '6'">
+                <input type="button" class="operator" name="minus" value="  -  " onclick="calc.input.value += ' - '">
+                <br>
+                <input type="button" name="seven" value="  1  " onclick="calc.input.value += '1'">
+                <input type="button" name="eight" value="  2  " onclick="calc.input.value += '2'">
+                <input type="button" name="nine" value="  3 " onclick="calc.input.value += '3'">
+                <input type="button" class="operator" name="plus" value="  +  " onclick="calc.input.value += ' + '">
+                <br>
+                <input type="button" name="zero" value="  0  " onclick="calc.input.value += '0'">
+                <input type="button" name="dot" value="  .  " onclick="calc.input.value += '.'">
+                <input type="button" name="doit" value="  =  " onclick="calc.input.value = eval(calc.input.value)">
+                <input type="button" class="operator" name="div" value="  /  " onclick="calc.input.value += ' / '">
+                <br>
+                <input type="button" id="clear" name="clear" value="  c  " onclick="calc.input.value = ''">
+                <input type="button" class="operator" name="paranthesis" value="  ( " onclick="calc.input.value += ' ( '">
+                <input type="button" class="operator" name="paranthesis" value="  )  " onclick="calc.input.value += ' ) '">
+                <input type="button" class="operator" name="mod" value="  % " onclick="calc.input.value += ' % '">
+                <br>
+            </td>
+        </tr>
+    </table>
+</form>
 </body>
 </html>
